@@ -24,7 +24,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "版本",
-          "text": "1.5.1"
+          "text": "1.5.2"
         },
         {
           "class": "DepictionTableTextView",
@@ -42,6 +42,13 @@
       "class": "DepictionStackView",
       "tabname": "更新日志",
       "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "### 1.5.2\n\n2026-11-20\n\n- 新增提醒：新增 / 查看 / 清空，到点桌宠冒泡并朗读；聊天或任务进行中延后提示。\n- 新增运行状态仲裁：聊天、任务、提醒互不打断，结束后恢复待机。\n- 安全：API Key 迁移到 Keychain，旧偏好与明文文件迁移后删除（B16）。\n- 安全：日志改私有缓存目录 + O_NOFOLLOW + 0600，安装/卸载日志同步处理（B17）。\n- 安全：素材 ZIP 导入前检查大小与可用空间，改流式可取消复制（B18）。\n- 修复：美团桥改用 RocketBootstrap 的 exposelocal / createremote，缺失时给出明确错误（B22）。"
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
         {
           "class": "DepictionMarkdownView",
           "markdown": "### 1.5.1\n\n2026-11-20\n\n- 修复：1.5.0 设置页打不开（XiaoXiongPetDFYPrefs 缺少 DFYConversationStore / DFYMemoryStore / DFYPromptRenderer 符号）。\n- 构建脚本补入三个 Core 源文件；新增「设置 bundle 符号闭包」验收项，未定义 DFY 类会直接判 FAIL。"

@@ -24,7 +24,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "版本",
-          "text": "1.4.2"
+          "text": "1.4.3"
         },
         {
           "class": "DepictionTableTextView",
@@ -42,6 +42,13 @@
       "class": "DepictionStackView",
       "tabname": "更新日志",
       "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "### 1.4.3\n\n2026-11-20\n\n- 新增 AI 工具调用闭环：设备操控开启后，聊天可让模型调用已授权的设备工具并回传结果续答。\n- 新增参数校验与执行器：未知工具、非法参数、重复 call_id、未授权工具一律拒绝执行。\n- 首批接入 get_screen_info、get_frontmost_app、launch_app、open_url 四项工具，其余工具返回未接入状态。\n- 工具调用受轮次、次数与会话时限约束，超限自动停止。"
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
         {
           "class": "DepictionMarkdownView",
           "markdown": "### 1.4.2\n\n2026-11-20\n\n- 详情页改用 Sileo 原生 depiction：软件包页面内直接显示「详情 / 更新日志」，不再跳转到「查看介绍」网页。\n- 构建自动生成 sileo.json，并写入 control 的 SileoDepiction 字段。\n- 保留网页版 Depiction，作为旧版软件包管理器的回退显示。"

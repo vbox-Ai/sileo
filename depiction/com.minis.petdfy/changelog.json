@@ -1,6 +1,14 @@
 {
-  "version": "1.5.0",
+  "version": "1.5.1",
   "entries": [
+    {
+      "version": "1.5.1",
+      "date": "2026-11-20",
+      "notes": [
+        "修复：1.5.0 设置页打不开（XiaoXiongPetDFYPrefs 缺少 DFYConversationStore / DFYMemoryStore / DFYPromptRenderer 符号）。",
+        "构建脚本补入三个 Core 源文件；新增「设置 bundle 符号闭包」验收项，未定义 DFY 类会直接判 FAIL。"
+      ]
+    },
     {
       "version": "1.5.0",
       "date": "2026-11-20",

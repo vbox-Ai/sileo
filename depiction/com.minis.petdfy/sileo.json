@@ -24,7 +24,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "版本",
-          "text": "1.4.7"
+          "text": "1.4.8"
         },
         {
           "class": "DepictionTableTextView",
@@ -42,6 +42,13 @@
       "class": "DepictionStackView",
       "tabname": "更新日志",
       "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "### 1.4.8\n\n2026-11-20\n\n- 供应商协议：新增 Anthropic（Claude）支持，按域名自动切换 /v1/messages；OpenAI 兼容协议保持不变。\n- 多模态：新增「截图发给模型」开关（默认关闭），开启后截图工具的结果会附带图片给模型。\n- 换装与配色切换加入淡入过渡、轻触感，并同步重置命中蒙版。"
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
         {
           "class": "DepictionMarkdownView",
           "markdown": "### 1.4.7\n\n2026-11-20\n\n- 跨 App 连续任务核验：屏幕/输入工具执行前校验目标范围，执行后自动比对画面并附核验结果。\n- 工具调用支持取消：关闭聊天面板会中止在途的多步调用。\n- 修复：关闭聊天面板不取消请求、旧回调仍回写界面（B09）。\n- 修复：迷你聊天回复覆盖用户新写的草稿（B10）。\n- 修复：安装失败仍返回成功（B11）；多个 jbroot 时不再盲选（B12）。\n- 修复：跨根复制缺少对称卸载记录，新增 prerm 按哈希清理镜像文件（B13）。\n- 修复：运行依赖只写 Recommends，改为 Depends 约束固件与注入框架（B14）。"

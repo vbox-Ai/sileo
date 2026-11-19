@@ -24,7 +24,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "版本",
-          "text": "1.4.4"
+          "text": "1.4.5"
         },
         {
           "class": "DepictionTableTextView",
@@ -42,6 +42,13 @@
       "class": "DepictionStackView",
       "tabname": "更新日志",
       "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "### 1.4.5\n\n2026-11-20\n\n- 屏幕感知 5 项工具接入：屏幕信息、截图、界面元素快照、坐标命中、屏幕概览。\n- 修复：关闭甩出物理后高速滑动被截断（B02）。\n- 修复：双击弹弓改为先上弓、按拉距决定力度（B04）。\n- 修复：替换素材后沿用旧命中蒙版（B05）。\n- 修复：镜像与 Q 弹形变后触摸位置未反变换（B06）。"
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
         {
           "class": "DepictionMarkdownView",
           "markdown": "### 1.4.4\n\n2026-11-20\n\n- 应用管理 7 项工具接入真实执行器：打开、结束、列表、运行中列表、前台、应用信息、打开链接。\n- 输入与剪贴板接入：整段输入、逐字输入、读取/写入剪贴板；键盘按键暂不宣告，避免调用到空实现。\n- 启动与结束应用受「目标 App 范围」约束，系统应用与自身进程受保护。\n- 只向模型宣告已有执行器的 12 项工具，其余 13 项保留授权开关但不宣告。"

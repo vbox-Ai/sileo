@@ -24,7 +24,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "版本",
-          "text": "1.4.8"
+          "text": "1.4.9"
         },
         {
           "class": "DepictionTableTextView",
@@ -42,6 +42,13 @@
       "class": "DepictionStackView",
       "tabname": "更新日志",
       "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "### 1.4.9\n\n2026-11-20\n\n- 恢复「服装」「配色」设置入口：6 套布料配色、5 套整体配色，选择后立即生效。\n- 换装走布料分区重着色（同款换色），配合淡入过渡与轻触感。\n- 说明：素材只有一套女仆装，换装不改变服装版型。"
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
         {
           "class": "DepictionMarkdownView",
           "markdown": "### 1.4.8\n\n2026-11-20\n\n- 供应商协议：新增 Anthropic（Claude）支持，按域名自动切换 /v1/messages；OpenAI 兼容协议保持不变。\n- 多模态：新增「截图发给模型」开关（默认关闭），开启后截图工具的结果会附带图片给模型。\n- 换装与配色切换加入淡入过渡、轻触感，并同步重置命中蒙版。"

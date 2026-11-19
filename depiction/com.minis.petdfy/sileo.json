@@ -24,7 +24,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "版本",
-          "text": "1.4.9"
+          "text": "1.5.0"
         },
         {
           "class": "DepictionTableTextView",
@@ -42,6 +42,13 @@
       "class": "DepictionStackView",
       "tabname": "更新日志",
       "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "### 1.5.0\n\n2026-11-20\n\n- 聊天记录持久化：重启后按存储恢复上下文，最多保留 40 条，可一键清空。\n- 长期记忆独立存储：最多 100 条，随人设提示词发送，可清空与导出。\n- 人设变量渲染：{{user}}、{{pet}}、{{date}}、{{time}}、{{weekday}}、{{memory}}，未知变量原样保留。\n- 设置新增「记忆与人设」：称呼、清空聊天记录、清空长期记忆、导出到剪贴板。\n- 统一键盘监视：迷你聊天条与桌宠按真实键盘矩形自动让位，收起后恢复。"
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
         {
           "class": "DepictionMarkdownView",
           "markdown": "### 1.4.9\n\n2026-11-20\n\n- 恢复「服装」「配色」设置入口：6 套布料配色、5 套整体配色，选择后立即生效。\n- 换装走布料分区重着色（同款换色），配合淡入过渡与轻触感。\n- 说明：素材只有一套女仆装，换装不改变服装版型。"

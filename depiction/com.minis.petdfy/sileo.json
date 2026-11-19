@@ -24,7 +24,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "版本",
-          "text": "1.4.3"
+          "text": "1.4.4"
         },
         {
           "class": "DepictionTableTextView",
@@ -42,6 +42,13 @@
       "class": "DepictionStackView",
       "tabname": "更新日志",
       "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "### 1.4.4\n\n2026-11-20\n\n- 应用管理 7 项工具接入真实执行器：打开、结束、列表、运行中列表、前台、应用信息、打开链接。\n- 输入与剪贴板接入：整段输入、逐字输入、读取/写入剪贴板；键盘按键暂不宣告，避免调用到空实现。\n- 启动与结束应用受「目标 App 范围」约束，系统应用与自身进程受保护。\n- 只向模型宣告已有执行器的 12 项工具，其余 13 项保留授权开关但不宣告。"
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
         {
           "class": "DepictionMarkdownView",
           "markdown": "### 1.4.3\n\n2026-11-20\n\n- 新增 AI 工具调用闭环：设备操控开启后，聊天可让模型调用已授权的设备工具并回传结果续答。\n- 新增参数校验与执行器：未知工具、非法参数、重复 call_id、未授权工具一律拒绝执行。\n- 首批接入 get_screen_info、get_frontmost_app、launch_app、open_url 四项工具，其余工具返回未接入状态。\n- 工具调用受轮次、次数与会话时限约束，超限自动停止。"

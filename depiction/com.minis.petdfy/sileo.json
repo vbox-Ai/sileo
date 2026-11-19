@@ -24,7 +24,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "版本",
-          "text": "1.4.6"
+          "text": "1.4.7"
         },
         {
           "class": "DepictionTableTextView",
@@ -42,6 +42,13 @@
       "class": "DepictionStackView",
       "tabname": "更新日志",
       "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "### 1.4.7\n\n2026-11-20\n\n- 跨 App 连续任务核验：屏幕/输入工具执行前校验目标范围，执行后自动比对画面并附核验结果。\n- 工具调用支持取消：关闭聊天面板会中止在途的多步调用。\n- 修复：关闭聊天面板不取消请求、旧回调仍回写界面（B09）。\n- 修复：迷你聊天回复覆盖用户新写的草稿（B10）。\n- 修复：安装失败仍返回成功（B11）；多个 jbroot 时不再盲选（B12）。\n- 修复：跨根复制缺少对称卸载记录，新增 prerm 按哈希清理镜像文件（B13）。\n- 修复：运行依赖只写 Recommends，改为 Depends 约束固件与注入框架（B14）。"
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
         {
           "class": "DepictionMarkdownView",
           "markdown": "### 1.4.6\n\n2026-11-20\n\n- 手势 6 项工具接入：点击、双击、长按、滑动、拖放、按元素点击。\n- 等待 2 项工具接入：等待元素出现 / 消失，支持超时、停止广播与会话时限。\n- 元素点击带快照代际校验，过期快照与遮挡目标会被拒绝。\n- 新增验收台账：所有未完成真机验收的功能统一登记。"

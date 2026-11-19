@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<title>大肥鱼 - 1.4.0</title>
+<style>
+  :root { --accent: #0A84FF; --bg: #000; --fg: #fff; --muted: #8e8e93; --line: #2c2c2e; --pill: #f2f2f7; }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg); }
+  body { font: 17px/1.55 -apple-system, "SF Pro Text", "PingFang SC", sans-serif; -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 18px calc(56px + env(safe-area-inset-bottom)); }
+  .tabs { display: flex; border-bottom: 1px solid var(--line); position: sticky; top: 0; background: var(--bg); z-index: 2; }
+  .tab { flex: 1; appearance: none; border: 0; background: transparent; color: var(--muted); font: inherit; font-weight: 600;
+         padding: 15px 0 13px; cursor: pointer; border-bottom: 2px solid transparent; transition: color .18s, border-color .18s; }
+  .tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+  .panel { display: none; padding-top: 18px; animation: fade .18s ease; }
+  .panel.active { display: block; }
+  @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+  .links { display: flex; flex-wrap: wrap; gap: 10px; margin: 2px 0 22px; }
+  .links a { flex: 1 1 44%; text-align: center; text-decoration: none; color: var(--accent); background: var(--pill);
+             border-radius: 12px; padding: 11px 8px; font-weight: 600; font-size: 16px; }
+  .summary { color: #f2f2f7; margin: 0 0 26px; }
+  h2 { font-size: 27px; line-height: 1.2; margin: 0 0 14px; font-weight: 700; }
+  ul.notes { list-style: none; margin: 0; padding: 0; }
+  ul.notes li { position: relative; padding: 0 0 12px 20px; color: #f2f2f7; }
+  ul.notes li::before { content: "·"; position: absolute; left: 4px; top: -1px; color: var(--muted); font-weight: 700; }
+  .entry { padding: 18px 0 6px; border-top: 1px solid var(--line); }
+  .entry:first-child { border-top: 0; padding-top: 2px; }
+  .entry-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 12px; }
+  .ver { font-size: 22px; font-weight: 700; letter-spacing: .2px; }
+  .date { color: var(--muted); font-size: 15px; white-space: nowrap; }
+  .foot { margin-top: 30px; text-align: center; color: #48484a; font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="tabs" role="tablist">
+    <button class="tab active" role="tab" data-panel="details">详情</button>
+    <button class="tab" role="tab" data-panel="changelog">更新日志</button>
+  </nav>
+
+  <section class="panel active" id="details" role="tabpanel">
+    
+    <p class="summary">把大肥鱼放到主屏幕和任意 App 之上：拖动、甩飞、弹弓、倾斜重力、聊天、语音、动作库与音乐联动。</p>
+    <h2>大肥鱼</h2>
+    <ul class="notes"><li>桌宠渲染：按角色 alpha 蒙版命中，空白处点击穿透给下层 App。</li><li>手势：拖拽、甩出、双击弹弓、长按菜单、摇一摇，支持倾斜重力。</li><li>对话：迷你输入条与完整聊天面板两种样式，可接所选 AI 供应商。</li><li>素材：设置内导入素材 ZIP，动作、服装与配色即时切换。</li><li>安全：锁屏或关闭总开关时统一收起所有聊天面板。</li></ul>
+    <p class="foot">大肥鱼 1.4.0 · 大肥鱼桌宠 · RootHide</p>
+  </section>
+
+  <section class="panel" id="changelog" role="tabpanel">
+    <div class="entry"><div class="entry-head"><span class="ver">版本 1.4.0</span><span class="date">2026-11-19</span></div><ul class="notes"><li>软件包名称改为「大肥鱼」，作者改为「✨破小鸭」。</li><li>详情页接入仓库地址，启用「详情 / 更新日志」双标签。</li><li>更新日志自动收录 1.3.5–1.4.0 的修复与功能记录。</li></ul></div><div class="entry"><div class="entry-head"><span class="ver">版本 1.3.9</span><span class="date">2026-11-19</span></div><ul class="notes"><li>新增软件包详情页：详情 / 更新日志双标签，深色原生风格。</li><li>更新日志由构建脚本自动生成，包含版本号、日期与更新内容。</li></ul></div><div class="entry"><div class="entry-head"><span class="ver">版本 1.3.8</span><span class="date">2026-11-19</span></div><ul class="notes"><li>构建可复现：固定打包时间戳，连续两次构建字节一致。</li><li>新增 build/manifest.json、SHA256SUMS 与离线验收脚本。</li></ul></div><div class="entry"><div class="entry-head"><span class="ver">版本 1.3.7</span><span class="date">2026-11-19</span></div><ul class="notes"><li>修复锁屏或关闭总开关时完整聊天面板不关闭的问题。</li><li>统一收起入口：停止输入法、关闭迷你条与完整面板。</li></ul></div><div class="entry"><div class="entry-head"><span class="ver">版本 1.3.6</span><span class="date">2026-11-19</span></div><ul class="notes"><li>新增倾斜重力：按屏幕方向投影设备重力，20Hz 低通滤波后驱动飞行。</li><li>关闭倾斜时恢复默认重力方向。</li></ul></div><div class="entry"><div class="entry-head"><span class="ver">版本 1.3.5</span><span class="date">2026-11-19</span></div><ul class="notes"><li>修复普通拖拽甩出没有重力：松手时显式注入 (0,1800) 重力。</li></ul></div>
+  </section>
+</div>
+<script>
+(function () {
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('.tab'));
+  var panels = Array.prototype.slice.call(document.querySelectorAll('.panel'));
+  function show(id) {
+    tabs.forEach(function (t) { t.classList.toggle('active', t.dataset.panel === id); });
+    panels.forEach(function (p) { p.classList.toggle('active', p.id === id); });
+    if (history.replaceState) history.replaceState(null, '', '#' + id);
+  }
+  tabs.forEach(function (t) { t.addEventListener('click', function () { show(t.dataset.panel); }); });
+  if (location.hash === '#changelog') show('changelog');
+})();
+</script>
+</body>
+</html>
+

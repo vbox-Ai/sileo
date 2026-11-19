@@ -1,6 +1,15 @@
 {
-  "version": "1.4.1",
+  "version": "1.4.2",
   "entries": [
+    {
+      "version": "1.4.2",
+      "date": "2026-11-20",
+      "notes": [
+        "详情页改用 Sileo 原生 depiction：软件包页面内直接显示「详情 / 更新日志」，不再跳转到「查看介绍」网页。",
+        "构建自动生成 sileo.json，并写入 control 的 SileoDepiction 字段。",
+        "保留网页版 Depiction，作为旧版软件包管理器的回退显示。"
+      ]
+    },
     {
       "version": "1.4.1",
       "date": "2026-11-20",

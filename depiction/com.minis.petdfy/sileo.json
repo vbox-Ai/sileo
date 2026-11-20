@@ -24,7 +24,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "版本",
-          "text": "1.6.2"
+          "text": "1.6.9"
         },
         {
           "class": "DepictionTableTextView",
@@ -42,6 +42,55 @@
       "class": "DepictionStackView",
       "tabname": "更新日志",
       "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "### 1.6.9\n\n2026-11-20\n\n- 兼容矩阵（C05）：新增 ENV-01–04 模板与已知能力边界说明；关于页显示 iOS 与设备型号。\n- 依赖清单（C07）：构建后自动生成组件、哈希、工具链与第三方许可清单。\n- 发布门槛（C08）：新增 release_gate.sh，校验包、版本一致性、台账与未验收项。"
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "### 1.6.8\n\n2026-11-20\n\n- 组件协议版本（A07）：新增协议号并在关于页显示；美团桥回执带 proto，客户端不匹配时明确报错。\n- 数据归属（A08）：偏好迁移前整域备份到 0600 的 prefs-backup.plist，保留未知键，便于回滚。"
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "### 1.6.7\n\n2026-11-20\n\n- 坐标契约（C02）：界面快照回执新增 contract（版本/坐标制/原点），供跨版本核对。\n- 有界重试（C03）：模型请求遇到超时、连接失败或 502/503/504 时最多重试 2 次（0.7s/1.4s 退避）。"
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "### 1.6.6\n\n2026-11-20\n\n- 任务状态落盘（A05）：每次任务步骤写入状态文件，停止/完成时清除；重启后 10 分钟内的未完成任务提示「已取消」，不自动恢复。\n- 素材导入空间预算（A06）：解包前检查可用空间（约 3 倍素材 + 512MB），不足直接拒绝，保留旧素材。"
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "### 1.6.5\n\n2026-11-20\n\n- 调度仲裁（C01）：任务与聊天工具共用一个执行会话锁，同一时刻只允许一个，冲突时明确拒绝。\n- 人工优先（A04）：拖拽、点击、长按、打开聊天时发出用户操作通知，正在运行的任务立即暂停。"
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "### 1.6.4\n\n2026-11-20\n\n- 结果分级（A01）：每个工具回执新增 class 字段：verified / dispatched / partial / not_executed / failed / unknown。\n- 统一预算（A03）：单次请求工具结果累计超过 256KB 直接中止；沿用轮次、调用次数与会话时限上限。"
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "### 1.6.3\n\n2026-11-20\n\n- 分层表情：新增 setFace，吃饭/节日/玩耍→开心，摸头→喜爱，拖拽→被拖，魔术→惊讶，旋转→眩晕。\n- 防重复执行（A02）：同一工具+同一参数 2.5 秒内重复调用直接拒绝；相同任务 3 秒内重复启动被忽略。"
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
         {
           "class": "DepictionMarkdownView",
           "markdown": "### 1.6.2\n\n2026-11-20\n\n- 修复：分层模式左右走动都倒退。实测素材默认朝右，镜像符号整体反了：\n- 现在向右不翻转、向左镜像；抛掷/滑行同一规则。"

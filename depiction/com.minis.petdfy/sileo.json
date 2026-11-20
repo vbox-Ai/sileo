@@ -24,7 +24,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "版本",
-          "text": "1.7.2"
+          "text": "1.7.3"
         },
         {
           "class": "DepictionTableTextView",
@@ -42,6 +42,13 @@
       "class": "DepictionStackView",
       "tabname": "更新日志",
       "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "### 1.7.3\n\n2026-11-20\n\n- 修复旋转黑块：不再手动改 window.frame，窗口随 scene 自动旋转，仅让容器跟随窗口 bounds。\n- 旋转后清掉帧图/分层遗留变换，并把宠物夹回可见区域，修复横屏看不到。"
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
         {
           "class": "DepictionMarkdownView",
           "markdown": "### 1.7.2\n\n2026-11-20\n\n- 修复横屏后宠物消失/跑出屏幕：旋转时停止运动与走动，把宠物夹回容器可见范围并保存新位置。"

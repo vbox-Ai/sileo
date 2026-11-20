@@ -24,7 +24,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "版本",
-          "text": "1.6.9"
+          "text": "1.7.0"
         },
         {
           "class": "DepictionTableTextView",
@@ -42,6 +42,13 @@
       "class": "DepictionStackView",
       "tabname": "更新日志",
       "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "### 1.7.0\n\n2026-11-20\n\n- 键盘按键工具（press_key）实现：通过 HID 发送 return/backspace/escape，25 项工具全部可宣告。\n- 数据控制（C04）：导出诊断、清空日志、诊断日志开关；导出内容只含版本/计数/工具状态。\n- 模块隔离与熔断（C06）：分层/聊天/设备工具/提醒/音乐各自开关，连续异常 3 次自动熔断，可重置。"
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
         {
           "class": "DepictionMarkdownView",
           "markdown": "### 1.6.9\n\n2026-11-20\n\n- 兼容矩阵（C05）：新增 ENV-01–04 模板与已知能力边界说明；关于页显示 iOS 与设备型号。\n- 依赖清单（C07）：构建后自动生成组件、哈希、工具链与第三方许可清单。\n- 发布门槛（C08）：新增 release_gate.sh，校验包、版本一致性、台账与未验收项。"

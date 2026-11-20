@@ -24,7 +24,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "版本",
-          "text": "1.5.6"
+          "text": "1.5.7"
         },
         {
           "class": "DepictionTableTextView",
@@ -42,6 +42,13 @@
       "class": "DepictionStackView",
       "tabname": "更新日志",
       "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "### 1.5.7\n\n2026-11-20\n\n- 修复分层模式重影：帧图层在摸头、抛掷球形态结束后重新显示，盖在分层模型上。\n- 分层模式统一隐藏/显示逻辑，球形态时分层模型一并隐藏，结束后恢复。\n- 修复 API Key 保存失败：Settings 沙盒既不能写 Keychain 也不能直接写 Preferences 目录，\n- 新增 CFPreferences 混淆回退；设置页会显示「已设置（偏好）」。"
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
         {
           "class": "DepictionMarkdownView",
           "markdown": "### 1.5.6\n\n2026-11-20\n\n- 接入分层渲染（S15b）：4 套真实服装（女仆/披风/船员/水手）、8 套分层配色，随包携带分层素材。\n- 触摸命中改用分层渲染快照的 alpha 蒙版；无分层素材时自动回退到逐帧渲染。\n- 设置中的「服装 / 配色」切换为分层选项，旧值自动落到有效范围。\n- API Key 显示改为「已设置（Keychain）/（文件）」，并修复空 Keychain 条目阻断文件降级的问题。"

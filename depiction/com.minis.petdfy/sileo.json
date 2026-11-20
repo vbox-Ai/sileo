@@ -24,7 +24,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "版本",
-          "text": "1.7.0"
+          "text": "1.7.2"
         },
         {
           "class": "DepictionTableTextView",
@@ -42,6 +42,20 @@
       "class": "DepictionStackView",
       "tabname": "更新日志",
       "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "### 1.7.2\n\n2026-11-20\n\n- 修复横屏后宠物消失/跑出屏幕：旋转时停止运动与走动，把宠物夹回容器可见范围并保存新位置。"
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "### 1.7.1\n\n2026-11-20\n\n- 修复旋转屏幕时边缘黑块：窗口尺寸改用场景坐标空间，旋转结束 0.35s 后再校一次布局；\n- 窗口根视图与容器随 bounds 自动重设。"
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
         {
           "class": "DepictionMarkdownView",
           "markdown": "### 1.7.0\n\n2026-11-20\n\n- 键盘按键工具（press_key）实现：通过 HID 发送 return/backspace/escape，25 项工具全部可宣告。\n- 数据控制（C04）：导出诊断、清空日志、诊断日志开关；导出内容只含版本/计数/工具状态。\n- 模块隔离与熔断（C06）：分层/聊天/设备工具/提醒/音乐各自开关，连续异常 3 次自动熔断，可重置。"

@@ -24,7 +24,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "版本",
-          "text": "1.5.9"
+          "text": "1.6.0"
         },
         {
           "class": "DepictionTableTextView",
@@ -42,6 +42,13 @@
       "class": "DepictionStackView",
       "tabname": "更新日志",
       "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "### 1.6.0\n\n2026-11-20\n\n- 安装加速：deb 改用 gzip 压缩；素材目录不再逐文件算哈希，只记录目录标记；安装时提示素材复制。\n- 修复：分层模式行走方向相反（默认朝左，向右移动改为反向镜像）。\n- 修复：API Key 保存成功但供应商页仍显示「未设置」——返回页面时重新读取存储状态。"
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
         {
           "class": "DepictionMarkdownView",
           "markdown": "### 1.5.9\n\n2026-11-20\n\n- 桌面小菜单按钮图标改为手势图（透明底，34pt 缩放）。\n- 服装选项首项标注为「默认（女仆）」。\n- 分层模式支持左右转身：行走方向变化时镜像模型，命中坐标同步反算。\n- 迷你菜单动作在分层模式下映射到可见姿态（吃饭/节日/玩耍等 → 开心），不再点了没反应。"

@@ -24,7 +24,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "版本",
-          "text": "1.5.5"
+          "text": "1.5.6"
         },
         {
           "class": "DepictionTableTextView",
@@ -42,6 +42,13 @@
       "class": "DepictionStackView",
       "tabname": "更新日志",
       "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "### 1.5.6\n\n2026-11-20\n\n- 接入分层渲染（S15b）：4 套真实服装（女仆/披风/船员/水手）、8 套分层配色，随包携带分层素材。\n- 触摸命中改用分层渲染快照的 alpha 蒙版；无分层素材时自动回退到逐帧渲染。\n- 设置中的「服装 / 配色」切换为分层选项，旧值自动落到有效范围。\n- API Key 显示改为「已设置（Keychain）/（文件）」，并修复空 Keychain 条目阻断文件降级的问题。"
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
         {
           "class": "DepictionMarkdownView",
           "markdown": "### 1.5.5\n\n2026-11-20\n\n- 修复：S11 保存 API Key 后仍显示「未设置」。Keychain 不可用时（无 entitlement）退回 0600 私有文件，并记录降级状态。\n- 修复：旋转屏幕后残留黑色区域（B07 补充），按屏幕实际尺寸重设窗口与容器。\n- 聊天输入框聚焦时若窗口不是 key window，会主动切换后重试，改善键盘不弹出。\n- 触摸/截图不可用的提示中带上 iOS 版本，便于定位兼容性问题。"

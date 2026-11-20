@@ -24,7 +24,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "版本",
-          "text": "1.5.8"
+          "text": "1.5.9"
         },
         {
           "class": "DepictionTableTextView",
@@ -42,6 +42,13 @@
       "class": "DepictionStackView",
       "tabname": "更新日志",
       "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "### 1.5.9\n\n2026-11-20\n\n- 桌面小菜单按钮图标改为手势图（透明底，34pt 缩放）。\n- 服装选项首项标注为「默认（女仆）」。\n- 分层模式支持左右转身：行走方向变化时镜像模型，命中坐标同步反算。\n- 迷你菜单动作在分层模式下映射到可见姿态（吃饭/节日/玩耍等 → 开心），不再点了没反应。"
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
         {
           "class": "DepictionMarkdownView",
           "markdown": "### 1.5.8\n\n2026-11-20\n\n- 改名：软件包名与设置页标题改为「小肥鱼 OVO」。\n- 设置主页头图与入口图标换成手势耶透明图，自动适配深色/浅色。\n- 修复：抛掷球形态仍显示原始服装，现使用当前分层渲染快照。\n- 修复：API Key 保存后仍显示未设置；改为始终落一份 cfprefsd 混淆副本，保存后弹窗显示存储位置与长度。"

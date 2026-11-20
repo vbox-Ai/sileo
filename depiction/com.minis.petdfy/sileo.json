@@ -24,7 +24,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "版本",
-          "text": "1.5.2"
+          "text": "1.5.3"
         },
         {
           "class": "DepictionTableTextView",
@@ -42,6 +42,13 @@
       "class": "DepictionStackView",
       "tabname": "更新日志",
       "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "### 1.5.3\n\n2026-11-20\n\n- 语音增强：新增音调/音量设置；朗读使用独立音频会话，压低其他媒体并在结束后归还。\n- 锁屏或关闭总开关时立即停止朗读与听写，并停用传感器与音乐轮询。\n- 修复：偏好开关重复广播、方向观察者重复注册（B07）。\n- 修复：隐藏/锁屏后传感器与音乐监听未停用（B19）。\n- 修复：等待动作被误判为「页面无变化」（B20），并加入 120 秒任务时限。\n- 修复：长按「对话/语音」映射相反（B21），旧值一次性迁移；「仅摸头」不再说拎起台词。"
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
         {
           "class": "DepictionMarkdownView",
           "markdown": "### 1.5.2\n\n2026-11-20\n\n- 新增提醒：新增 / 查看 / 清空，到点桌宠冒泡并朗读；聊天或任务进行中延后提示。\n- 新增运行状态仲裁：聊天、任务、提醒互不打断，结束后恢复待机。\n- 安全：API Key 迁移到 Keychain，旧偏好与明文文件迁移后删除（B16）。\n- 安全：日志改私有缓存目录 + O_NOFOLLOW + 0600，安装/卸载日志同步处理（B17）。\n- 安全：素材 ZIP 导入前检查大小与可用空间，改流式可取消复制（B18）。\n- 修复：美团桥改用 RocketBootstrap 的 exposelocal / createremote，缺失时给出明确错误（B22）。"

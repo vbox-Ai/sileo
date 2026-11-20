@@ -9,7 +9,7 @@
       "views": [
         {
           "class": "DepictionMarkdownView",
-          "markdown": "**大肥鱼**\n\n大肥鱼桌宠 · RootHide\n\n把大肥鱼放到主屏幕和任意 App 之上：拖动、甩飞、弹弓、倾斜重力、聊天、语音、动作库与音乐联动。"
+          "markdown": "**小肥鱼 OVO**\n\n小肥鱼OVO桌宠 · RootHide\n\n把小肥鱼OVO放到主屏幕和任意 App 之上：拖动、甩飞、弹弓、倾斜重力、聊天、语音、动作库与音乐联动。"
         },
         {
           "class": "DepictionSeparatorView"
@@ -24,7 +24,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "版本",
-          "text": "1.5.7"
+          "text": "1.5.8"
         },
         {
           "class": "DepictionTableTextView",
@@ -42,6 +42,13 @@
       "class": "DepictionStackView",
       "tabname": "更新日志",
       "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "### 1.5.8\n\n2026-11-20\n\n- 改名：软件包名与设置页标题改为「小肥鱼 OVO」。\n- 设置主页头图与入口图标换成手势耶透明图，自动适配深色/浅色。\n- 修复：抛掷球形态仍显示原始服装，现使用当前分层渲染快照。\n- 修复：API Key 保存后仍显示未设置；改为始终落一份 cfprefsd 混淆副本，保存后弹窗显示存储位置与长度。"
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
         {
           "class": "DepictionMarkdownView",
           "markdown": "### 1.5.7\n\n2026-11-20\n\n- 修复分层模式重影：帧图层在摸头、抛掷球形态结束后重新显示，盖在分层模型上。\n- 分层模式统一隐藏/显示逻辑，球形态时分层模型一并隐藏，结束后恢复。\n- 修复 API Key 保存失败：Settings 沙盒既不能写 Keychain 也不能直接写 Preferences 目录，\n- 新增 CFPreferences 混淆回退；设置页会显示「已设置（偏好）」。"

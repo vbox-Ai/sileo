@@ -24,7 +24,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "版本",
-          "text": "1.5.3"
+          "text": "1.5.4"
         },
         {
           "class": "DepictionTableTextView",
@@ -42,6 +42,13 @@
       "class": "DepictionStackView",
       "tabname": "更新日志",
       "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "### 1.5.4\n\n2026-11-20\n\n- 性能策略：低电量或高温时隔帧渲染、音乐轮询降频（2s→6s），物理仍按真实时间积分。\n- 启动时清理超过 1 小时的中断导入临时目录；偏好新增 schema 版本号，旧配置原样保留。\n- 交付：新增《真机验收手册》（Markdown + HTML），覆盖 42 项功能与 25 项工具逐条判据。"
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
         {
           "class": "DepictionMarkdownView",
           "markdown": "### 1.5.3\n\n2026-11-20\n\n- 语音增强：新增音调/音量设置；朗读使用独立音频会话，压低其他媒体并在结束后归还。\n- 锁屏或关闭总开关时立即停止朗读与听写，并停用传感器与音乐轮询。\n- 修复：偏好开关重复广播、方向观察者重复注册（B07）。\n- 修复：隐藏/锁屏后传感器与音乐监听未停用（B19）。\n- 修复：等待动作被误判为「页面无变化」（B20），并加入 120 秒任务时限。\n- 修复：长按「对话/语音」映射相反（B21），旧值一次性迁移；「仅摸头」不再说拎起台词。"

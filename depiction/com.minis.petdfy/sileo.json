@@ -24,7 +24,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "版本",
-          "text": "1.6.1"
+          "text": "1.6.2"
         },
         {
           "class": "DepictionTableTextView",
@@ -42,6 +42,13 @@
       "class": "DepictionStackView",
       "tabname": "更新日志",
       "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "### 1.6.2\n\n2026-11-20\n\n- 修复：分层模式左右走动都倒退。实测素材默认朝右，镜像符号整体反了：\n- 现在向右不翻转、向左镜像；抛掷/滑行同一规则。"
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
         {
           "class": "DepictionMarkdownView",
           "markdown": "### 1.6.1\n\n2026-11-20\n\n- 修复：分层模式自动走动仍倒退。走路走的是 wander_left/right 帧路径，之前没有应用镜像；\n- 现在按行走方向镜像分层模型，停下时恢复默认朝向。"

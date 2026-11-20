@@ -24,7 +24,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "版本",
-          "text": "1.6.0"
+          "text": "1.6.1"
         },
         {
           "class": "DepictionTableTextView",
@@ -42,6 +42,13 @@
       "class": "DepictionStackView",
       "tabname": "更新日志",
       "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "### 1.6.1\n\n2026-11-20\n\n- 修复：分层模式自动走动仍倒退。走路走的是 wander_left/right 帧路径，之前没有应用镜像；\n- 现在按行走方向镜像分层模型，停下时恢复默认朝向。"
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
         {
           "class": "DepictionMarkdownView",
           "markdown": "### 1.6.0\n\n2026-11-20\n\n- 安装加速：deb 改用 gzip 压缩；素材目录不再逐文件算哈希，只记录目录标记；安装时提示素材复制。\n- 修复：分层模式行走方向相反（默认朝左，向右移动改为反向镜像）。\n- 修复：API Key 保存成功但供应商页仍显示「未设置」——返回页面时重新读取存储状态。"
